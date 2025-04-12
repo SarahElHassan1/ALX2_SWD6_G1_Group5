@@ -112,7 +112,7 @@ AddItem.click();
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
-            driver.quit();  // إغلاق المتصفح بعد كل method
+            driver.quit();
         }
     }
 }
