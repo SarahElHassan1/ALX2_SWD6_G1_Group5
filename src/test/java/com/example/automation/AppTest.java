@@ -2,6 +2,7 @@ package com.example.automation;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -108,8 +109,10 @@ AddItem.click();
         }
     }
 
-    @AfterTest
+    @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();  // إغلاق المتصفح بعد كل method
+        }
     }
 }
