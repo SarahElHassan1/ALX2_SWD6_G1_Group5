@@ -2,9 +2,11 @@
 <suite name="All Tests">
     <test name="Login ">
         <classes>
-            <class name="com.example.automation.AddLapptop"/>
+            <class name="com.example.automation.AddLaptop"/>
             <class name="com.example.automation.CartTest"/>
             <class name="com.example.automation.AddItem"/>
+            <class name="com.example.automation.Invalid"/>
+
         </classes>
     </test>
 </suite>

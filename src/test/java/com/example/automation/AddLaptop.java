@@ -6,7 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class AddLapptop {
+public class AddLaptop {
 
     WebDriver driver= new ChromeDriver();
 
@@ -77,7 +77,7 @@ AddItem.click();
             Thread.sleep(2000);
 
             WebElement CreditCart=driver.findElement(By.id("card"));
-            CreditCart.sendKeys("12");
+            CreditCart.sendKeys("1234567812345678");
             Thread.sleep(2000);
 
             WebElement Month=driver.findElement(By.id("month"));
